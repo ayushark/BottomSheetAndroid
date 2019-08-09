@@ -19,19 +19,16 @@
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@drawable/shape"
             android:orientation="horizontal">
-
-            <ImageView
-                android:layout_marginRight="10dp"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/ic_dns_red_400_24dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tap to see quick actions"
-                android:textColor="@color/grey"/>
+                android:text="Get Contacts"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"/>
 
         </LinearLayout>
 
@@ -251,10 +248,10 @@
                             android:layout_height="60dp">
 
                             <ImageView
-                                android:src="@drawable/ic_round_account_circle_24px"
+                                android:src="@drawable/ic_outline_account_circle_24px"
                                 android:scaleType="fitXY"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
+                                android:layout_width="35dp"
+                                android:layout_height="35dp" />
 
                         </RelativeLayout>
 
@@ -284,10 +281,10 @@
                             android:layout_height="60dp">
 
                             <ImageView
-                                android:src="@drawable/ic_baseline_account_circle_24px"
+                                android:src="@drawable/ic_outline_account_circle_24px"
                                 android:scaleType="fitXY"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
+                                android:layout_width="35dp"
+                                android:layout_height="35dp" />
 
                         </RelativeLayout>
 
@@ -320,8 +317,8 @@
                             <ImageView
                                 android:src="@drawable/ic_outline_account_circle_24px"
                                 android:scaleType="fitXY"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"/>
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"/>
 
                         </RelativeLayout>
 

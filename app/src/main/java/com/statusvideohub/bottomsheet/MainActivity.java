@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity{
         bottomSheet = findViewById(R.id.bottom_sheet1);
         mBottomSheetBehavior1 = BottomSheetBehavior.from(bottomSheet);
         mBottomSheetBehavior1.setPeekHeight(120);
-        mBottomSheetBehavior1.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        mBottomSheetBehavior1.setState(BottomSheetBehavior.STATE_HIDDEN);
         mBottomSheetBehavior1.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity{
 
                 if (newState == BottomSheetBehavior.STATE_DRAGGING) {
                     tapactionlayout.setVisibility(View.GONE);
+                }
+                if(newState == BottomSheetBehavior.STATE_HIDDEN) {
+                     tapactionlayout.setVisibility(View.GONE);
                 }
             }
 
